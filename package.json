@@ -1,0 +1,44 @@
+{
+  "name": "@codaline-io/create-apollo-error",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rm -rf ./lib && microbundle --ts -i ./index.ts"
+  },
+  "engines": {
+    "node": ">=16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codaline-io/create-apollo-error.git"
+  },
+  "author": "Marcus Kirsch & Bengt Weiße GbR (codaline)",
+  "bugs": {
+    "url": "https://github.com/codaline-io/create-apollo-error"
+  },
+  "homepage": "https://github.com/codaline-io/create-apollo-error",
+  "keywords": [
+    "apollo",
+    "graphql",
+    "error"
+  ],
+  "description": "Just a small helper method to easier error creation with apollo graphql server >= 4",
+  "license": "MIT",
+  "exports": {
+    "types": "./lib/index.d.ts",
+    "require": "./lib/index.js",
+    "default": "./lib/index.modern.js"
+  },
+  "main": "./lib/index.js",
+  "module": "./lib/index.module.js",
+  "unpkg": "./lib/index.umd.js",
+  "types": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/node": "16",
+    "graphql": "^16.6.0",
+    "microbundle": "^0.15.1"
+  },
+  "peerDependencies": {
+    "graphql": ">=16.0.0"
+  }
+}
+  
