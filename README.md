@@ -6,5 +6,9 @@ smart helper to create errors for apollo server >=v4
 ```TS
 import { createApolloError } from '@codaline-io/create-apollo-error'
 
-throw createApolloError(message, optionalCode)
+throw createApolloError(message, optionalErrorCode, optionalErrorType, optionalGraphQLErrorOptions)
 ```
+
+- optionalErrorCode?: string | null -> graphqlError.extensions.code
+- optionalErrorType?: string | null -> graphqlError.extensions.type
+- optionalGraphQLErrorOptions?: GraphQLErrorOptions, e.g. setting original error and so on
