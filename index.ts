@@ -4,8 +4,8 @@ export const createApolloError = (message: string, code?: string | null, type?: 
   return new GraphQLError(message, {
     ...options,
     extensions: {
-      code,
-      type,
+      code: code || undefined,
+      type: type || undefined,
       ...options.extensions || {},
     }
   })
