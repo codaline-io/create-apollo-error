@@ -1,11 +1,11 @@
 {
   "name": "@codaline-io/create-apollo-error",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "build": "rm -rf ./lib && microbundle --ts -i ./index.ts"
   },
   "engines": {
-    "node": ">=20.x"
+    "node": ">=18.x"
   },
   "repository": {
     "type": "git",
