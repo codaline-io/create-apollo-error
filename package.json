@@ -1,11 +1,11 @@
 {
   "name": "@codaline-io/create-apollo-error",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "build": "rm -rf ./lib && microbundle --ts -i ./index.ts"
   },
   "engines": {
-    "node": ">=16.x"
+    "node": ">=20.x"
   },
   "repository": {
     "type": "git",
@@ -26,22 +26,25 @@
   "exports": {
     "types": "./lib/index.d.ts",
     "require": "./lib/index.js",
-    "default": "./lib/index.modern.js"
+    "default": "./lib/index.modern.mjs"
   },
   "main": "./lib/index.js",
   "module": "./lib/index.module.js",
   "unpkg": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
   "devDependencies": {
-    "@types/node": "16",
-    "graphql": "^16.6.0",
+    "@types/node": "20",
+    "graphql": "^16.8.1",
     "microbundle": "^0.15.1"
   },
   "peerDependencies": {
-    "graphql": ">=16.0.0"
+    "graphql": ">=18.0.0"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "volta": {
+    "node": "20.9.0"
   }
 }
